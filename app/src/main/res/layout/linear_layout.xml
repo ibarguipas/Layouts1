@@ -2,35 +2,42 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:padding="80dp">
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_weight="2"
         android:gravity="center"
-        android:text="Conectar" />
+        android:text="Conectar"
+        android:textSize="24sp" />
 
     <EditText
         android:id="@+id/editTextText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_weight="1"
         android:ems="10"
-        android:inputType="text"
-        android:text="Correo" />
+        android:hint="Correo"
+        android:inputType="text" />
 
     <EditText
         android:id="@+id/editTextText2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_weight="1"
         android:ems="10"
-        android:inputType="text"
-        android:text="Contraseña" />
+        android:hint="Contraseña"
+        android:inputType="text" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_weight="1"
         android:gravity="center"
         android:text="INICIAR SESION" />
 
@@ -38,6 +45,9 @@
         android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_weight="2"
         android:gravity="center"
-        android:text="¿Olvidaste tu contraseña?" />
+        android:text="¿Olvidaste tu contraseña?"
+        android:textColor="#2196F3"
+        android:textStyle="bold" />
 </LinearLayout>
